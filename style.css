@@ -1,0 +1,92 @@
+/*---------main layout---------*/
+html, body {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+.middle-container {
+	width: 600px;
+	height: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+}
+
+.vertical-container {
+    position: absolute;
+    width: 524px;
+    top: 10%;
+    left: 16px;
+    text-align: center;
+    padding: 20px;
+    border: 2px solid #89d8e0;
+    border-radius: 30px;
+}
+
+/*--------calculator layout-------*/
+h1 {
+	font-family: cursive;
+	color: #87cefa;
+}
+
+#polynomial {
+    width: 520px;
+    height: 70px;
+    border: 2px solid gray;
+    border-radius: 10px;
+    font-size: 40px;
+    border-color: #add8e6;
+    font-family: cursive;
+    font-size: 45px;
+}
+
+.button-area {
+    padding: 10px;
+    width: 500px;
+    background-color: #e0ffff;
+    border-radius: 30px;
+    margin-top: 30px;
+}
+
+.line {
+	width: 500px;
+	height: 100px;
+}
+
+button {
+    margin-right: 20px;
+    margin-left: 20px;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    float: left;
+    font-family: cursive;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+button.number {
+    background-color: #f5f5dc;
+    border: 1px solid;
+    border-color: white;
+    color: #ff8c00;
+    outline: none;
+}
+
+button.number:hover {
+    background-color: #fffacd;
+}
+
+button.symbol {
+    background-color: #ffe4c4;
+    border: 1px solid;
+    border-color: azure;
+    color: #d2691e;
+    outline: none;
+}
+
+button.symbol:hover {
+    background-color: #faf0e6;
+}
