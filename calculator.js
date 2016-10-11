@@ -4,8 +4,6 @@ function writeToScreen() {
 	document.getElementById('polynomial').innerHTML = expression;
 }
 
-// 除数为0的情况还没有实现
-
 function calculator() {
 	var input = document.getElementsByTagName("button");
 	for (var i = 0; i < input.length; i++) {
@@ -32,13 +30,13 @@ function calculator() {
 					expression = eval(expression).toString();
 					if (expression.indexOf(".") != -1) {
 						var a = expression.split(".");
-						if (a[1].length > 2) {
+						if (a[1].length > 6) {
 							expression = parseFloat(expression);
-							expression = expression.toFixed(2);
+							expression = expression.toFixed(6);
 						}
 					}
 					if(expression == "Infinity") {
-						alert("The expression is illegal!");
+						alert("The divisor can not be 0!");
 						expression = "";
 					}
 					writeToScreen();
@@ -53,7 +51,4 @@ function calculator() {
 	}
 }
 
-calculator();
-
-// window.onload = calculator;
-
+window.onload = calculator;

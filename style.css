@@ -40,7 +40,10 @@ h1 {
     border-color: #add8e6;
     font-family: cursive;
     font-size: 45px;
+    overflow: hidden;
+    text-align: right;
 }
+
 
 .button-area {
     padding: 10px;
